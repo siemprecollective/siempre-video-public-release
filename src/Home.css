@@ -1,0 +1,173 @@
+#centerHolder img{
+  margin: 0 auto;
+}
+
+#centerHolder{
+	display: table;
+	margin: 6% auto 0px auto;
+}
+
+#centerHolder a{
+	color: black;
+}
+
+#textHolder{
+	margin: 2% auto 2% auto;
+	max-width: 400px;
+	text-align: center;	
+}
+
+#textHolder p{
+  font-family: Calibri;
+	font-size: 18px;
+	margin: 0px;
+	text-align: center;	
+}
+
+#textHolder li {
+        font-family: Calibri;
+	font-size: 14px;
+	margin: 0;
+}
+
+#bulletList{
+	margin: 10px auto 10px auto;
+	max-width: 200px;
+	text-align: left;
+ 	font-weight: bold;
+}
+
+#bulletList li{
+	font-size: 16px;
+}
+
+#buttonHolder{
+	margin: 10px auto 10px auto;
+	max-width: 500px;
+}
+
+#buttonHolder button{
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: black;
+	margin: 5px;
+	width: 70px;
+	height: 42px;
+}
+
+
+#login{
+	display: table;
+	margin: 32px 48.5% 0px auto;
+}
+
+#login p{
+	margin: 6px;
+}
+
+#login p{
+	height: 24px;
+}
+
+#login span:hover{
+	color: #5c5c5c;
+}
+
+input {
+	outline: none;
+	height: 24px;
+	border: 1px solid #b5b5b5;
+	border-radius: 10px;
+	margin: 5px;
+	padding-left: 8px;
+}
+
+button{
+	background-color: white;
+	border: 1px solid black;
+	border-style: solid;
+	border-radius: 12px;
+	border-width: 1px;
+	border-color: black;
+}
+
+button:hover{
+	color: #5c5c5c;
+	border: 1px solid #5c5c5c;
+}
+
+.footer {
+	text-align: center;
+	line-height: normal;
+	color: #a5a5a5;
+}
+
+.footer img{
+	filter: opacity(0.35);
+}
+
+.footer img:hover{
+	filter: opacity(1.0);
+}
+
+.footer p{
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.footer a{
+	color: #a5a5a5;
+	text-decoration: none;
+}
+
+a:hover{
+	color: black;
+}
+
+#intro img:hover{
+	filter: opacity(0.5);
+}
+
+#backHome {
+	margin-bottom: 36px;
+	color: #a5a5a5;
+	cursor: pointer;
+}
+
+#backHome:hover{
+	color: black;
+}
+
+#walkthrough{
+	text-align: center;
+	margin-top: 30px;
+	line-height: 20px
+}
+
+#walkthrough p.walkthrough-explanation {
+	margin: 20px 0px;
+}
+
+#walkthrough ul{
+	list-style: disc;
+	padding: 0 26px;
+}
+
+#walkthrough .send-friend-request-container {
+  margin-top: 50px;
+}
+
+#photoUpload:hover{
+	filter: opacity(0.5);
+}
+
+#resizeWidth{
+	max-width: 800px;
+	min-height: 270px;
+}
+
+@media only screen and (max-width: 800px) {
+	#resizeWidth{
+		max-width: 360px;
+	}
+}

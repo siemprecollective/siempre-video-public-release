@@ -1,0 +1,145 @@
+.self-video {
+  position: absolute;
+  z-index: 98;
+  bottom: 10px;
+  right: 10px;
+}
+
+.self-video .self-text-status-container {
+  width: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.self-video .self-text-status {
+  margin: 0 0 10px 0;
+  width: 90%;
+  border: none;
+  border-radius: 5px;
+  line-height: 18px;
+  resize: none;
+}
+
+.night .self-video .self-text-status {
+  color: white;
+}
+
+.self-video .video-container {
+  height: auto;
+  width: auto;
+  padding: 10px 20px 10px 20px;
+  border-radius: 0px;
+  margin: 0px;
+}
+
+.self-video .small-main-container {
+  width: 160px;
+  height: 90px;
+}
+
+.self-video .picture-container {
+  margin-bottom: 10px;
+}
+
+.self-video .video-container video {
+  width: 160px;
+  height: auto;
+}
+
+
+.self-video .stream-controls > div {
+  float: right;
+  height: 35px;
+  width: 35px;
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.stream-controls > div {
+  margin: 10px;
+}
+
+
+.self-video .stream-controls > div i {
+  display: block;
+  position: absolute;
+  top: 50%; left: 50%; transform: translate(-50%, -50%);
+  font-size: 80%;
+}
+
+.night .self-video .stream-controls > div {
+  background-color: #333333;
+  color: #c3c3c3; 
+}
+
+.self-video .stream-controls > div .fa-microphone-slash,
+.self-video .stream-controls > div .fa-video-slash {
+  color: gray;
+}
+
+.night .self-video .stream-controls > div .fa-microphone-slash,
+.nght .self-video .stream-controls > div .fa-video-slash {
+  color: #5a5a5a;
+}
+
+.self-video .status-menu {
+  position: absolute;
+  bottom: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 100%;
+  right: 0;
+}
+
+.night .self-video .status-menu {
+
+}
+
+.self-video .status-menu > div {
+  flex: 1;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.self-video .context-indicator {
+  position: absolute;
+  height: 30px;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  color: #4e4e4e73;
+  right: 0;
+}
+
+.night .self-video .context-indicator {
+
+}
+
+.self-video .context-indicator.up {
+  bottom: 100%;
+}
+
+.self-video .context-indicator.down {
+  bottom: calc(100% + 199px);
+}
+
+.self-video .context-indicator.down > div {
+  transform: translateX(-50%) rotate(180deg);
+}
+
+.self-video .context-indicator > div {
+  position: absolute;
+  left: 50%;
+  top: 7px;
+  transform: translateX(-50%);
+}

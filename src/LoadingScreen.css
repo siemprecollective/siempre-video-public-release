@@ -1,0 +1,39 @@
+.loading-screen {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-screen > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 200px;
+  height: 200px;
+  border: 8px solid black;
+  border-radius: 200px;
+  animation-iteration-count: infinite;
+  animation-name: loading-logo-glow;
+  animation-duration: 2s;
+}
+
+@keyframes loading-logo-glow {
+  from {
+    border-color: black;
+    border-width: 0px;
+  }
+
+  to {
+    border-color: white;
+    border-width: 20px;
+  }
+}
+
+.loading-screen img {
+  height: 110px;
+  width: 110px;
+  margin: 0 auto;
+}

@@ -1,0 +1,25 @@
+.all-friends-container {
+    height: 100%;
+    padding: 100px 40px;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.add-friends {
+    padding: 30px 0px;
+    width: 30%;
+}
+
+.friend-bubble-scroll {
+    flex: 1;
+    overflow: scroll;
+}
+
+.friend-bubble-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,31 @@
+.friend-requests-header {
+  margin: 40px 0px;
+  text-align: center;
+}
+
+.friend-request-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.friend-request-container button {
+  margin-right: 15px;
+  height: 30px;
+  width: 60px;
+}
+
+.friend-request-container button:first-child {
+  color: green;
+  border: 1px solid green;
+}
+
+.friend-request-container button:nth-child(2) {
+  color: red;
+  border: 1px solid red;
+}
+
+.friend-request-container p:first-child {
+  font-weight: bold;
+  margin-bottom: 5px;
+}

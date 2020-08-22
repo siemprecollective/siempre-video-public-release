@@ -1,0 +1,29 @@
+.send-friend-request-container {
+  margin-top: 0px;
+  text-align: left;
+}
+
+.send-friend-request-container p {
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+.send-friend-request {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.send-friend-request .invitation {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.send-friend-request input {
+  width: 100%;
+}
+
+.send-friend-request button {
+  height: 24px;
+  width: 120px;
+}

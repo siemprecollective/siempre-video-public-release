@@ -1,0 +1,54 @@
+.friend-bubble {
+    position: relative;
+    width: 110px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.friend-bubble-picture {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 40px;
+    background-color: rgb(208, 208, 208);
+    text-align: center;
+    line-height: 80px;
+    color: black;
+    font-size: 25px;
+    margin: 15px auto 10px auto;
+    opacity: 0.3;
+    overflow: hidden;
+}
+
+.friend-bubble-picture > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.friend-bubble-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.friend-bubble-name {
+    width: 100%;
+    font-size: 80%;
+    text-align: center;
+}
+
+.friend-bubble-picture-selected {
+    opacity: 1.0;
+    width: 80px;
+    height: 80px;
+    margin: 10px auto;
+}
+
+.friend-bubble-selected {
+    opacity: 1.0;
+    font-size: 100%;
+    font-weight: 500;
+    margin: 10px auto;
+}

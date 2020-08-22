@@ -1,0 +1,198 @@
+#commons-alt {
+  height: 100%;
+  display: flex;
+}
+
+#commons-alt #commons-main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 50px;
+  padding-top: 80px;
+}
+
+#commons-alt #commons-side {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+#commons-alt .commons-section-shade {
+  border: 8px solid black;
+  border-radius: 20px;
+  display: none;
+}
+
+.night #commons-alt .commons-section-shade {
+  border-color: white;
+}
+
+#commons-alt .will-drop .commons-section-shade {
+  pointer-events: none;
+  display: block;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  height: calc(100% - 80px);
+  width: 100%;
+  background-color: white;
+  opacity: 0.5;
+  z-index: 97;
+}
+
+.night #commons-alt .will-drop .commons-section-shade {
+  opacity: 0.1;
+}
+
+#commons-alt #commons-side.dragging {
+  flex: 1;
+}
+
+@keyframes split-commons-for-dropping {
+  from {
+    flex: 0
+  }
+  to{
+    flex: 1
+  }
+}
+
+
+#commons-alt .commons-main-row {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  height: 0px;
+  padding-bottom: 10px;
+}
+
+#commons-alt .commons-side-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#commons-alt .commons-main-row .name-and-picture-container {
+  right: 50%;
+}
+
+#commons-alt .commons-side-row .video-container {
+  height: 80px;
+  width: 110px;
+}
+
+#commons-alt .commons-main-row .video-container {
+  height: 98%;
+  margin: 5px 10px 5px 5px;
+}
+
+
+#commons-alt .commons-side-row .status-container {
+  height: 15px;
+  width: 15px;
+  font-size: 10px;
+  line-height: 14px;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+}
+
+#commons-alt .commons-side-row .text-dot{
+  bottom: 30px;
+  left: 8px;
+  height: 15px;
+  width: 15px;
+  padding: 4px;
+  font-size: 8px;
+}
+
+#commons-alt .commons-main-row .status-container {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  text-align: center;
+}
+
+#commons-alt .commons-main-row .text-dot{
+  bottom: 45px;
+  left: 10px;
+  height: 25px;
+  width: 25px;
+  padding: 6px;
+  font-size: 12px;
+}
+
+#commons-alt .commons-main-row > div {
+  flex: 1;
+  height: 100%;
+}
+
+#commons-alt .commons-side-row > div {
+  margin: 1px;
+}
+
+#commons-alt .video-container video {
+  object-fit: contain;
+}
+
+#commons-alt #commons-private-indicator, #commons-alt #commons-all-indicator {
+  display: none;
+  position: fixed;
+  width: 10px;
+  height: 100%;
+  background-color: rgba(100, 100, 100, 0.5);
+  z-index: 98;
+}
+
+#commons-alt #commons-private-indicator > div, #commons-alt #commons-all-indicator > div {
+  position: fixed;
+  top: 0;
+  background-color: rgba(100, 100, 100, 1);
+  font-size: 20px;
+  padding: 15px;
+  color: white;
+}
+
+#commons-alt #commons-private-indicator.will-drop, #commons-alt #commons-all-indicator.will-drop {
+  background-color: rgba(100, 100, 100, 1);
+}
+  
+#commons-alt #commons-private-indicator, #commons-alt #commons-private-indicator > div {
+  right: 0;
+}
+
+#commons-alt #commons-all-indicator, #commons-alt #commons-all-indicator > div {
+  left: 0;
+}
+
+#commons-alt .no-friends-message-container  {
+  margin-top: 100px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#commons-alt .no-friends-message {
+  width: 400px;
+  height: 400px;
+  font-size: 20px;
+}
+
+#commons-alt .no-friends-message img {
+  width: 50px;
+  height: 50px;
+  margin: 10px 150px;
+}
+
+#commons-alt .no-friends-message p {
+  margin-bottom: 10px;
+}
